@@ -3,16 +3,29 @@
 <html>
 <head>
   <title>{% block title %}{% endblock %}</title>
+  <style>
+   body {
+    background: #fafad2; 
+   }
+   
+  </style>
   <link href="{% static "css/blog.css" %}" rel="stylesheet">
 </head>
 <body>
+
   <div id="content">
     {% block content %}
     {% endblock %}
   </div>
   <div id="sidebar">
-    <h2>My blog</h2>
-    <p>This is my blog.</p>
+    <h2>ТОЛЬКО ДЛЯ ФАНАТОВ</h2>
+    <p>полномасштабный сезон восхитительных прерий</p>
+	<p><img src="{% static "tatata\lol.jpg" %}" width="350"></p>
+	<p><img src="{% static "tatata\tata.jpg" %}" width="350"></p>
+	
+	<p><img src="{% static "tatata\g.jpg" %}" width="350"></p>
+	<p><img src="{% static "tatata\haha.jpg" %}" width="350"></p>
+	
   </div>
 </body>
 </html>
